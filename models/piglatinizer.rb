@@ -11,7 +11,9 @@ class PigLatinizer
       string[0] = ""
       string << "ay"
     else
-      string << string.shift(2)
+      string << string[0]
+      string << string[1]
+      string << "ay"
       string[0] = ""
       string[1] = ""
     end
