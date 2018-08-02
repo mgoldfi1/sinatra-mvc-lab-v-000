@@ -25,6 +25,7 @@ class PigLatinizer
       word[0] = ""
       word[0] = ""
     end
+  end
     sentence.join(" ")
 
   end
