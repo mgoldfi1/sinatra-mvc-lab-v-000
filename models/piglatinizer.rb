@@ -24,9 +24,9 @@ class PigLatinizer
       string[0] = ""
       string[0] = ""
       string[0] = ""
-      binding.pry
     end
     string
+    binding.pry
   end
 
 end
