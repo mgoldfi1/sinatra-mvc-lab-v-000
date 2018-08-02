@@ -16,6 +16,14 @@ class PigLatinizer
       string << "ay"
       string[0] = ""
       string[0] = ""
+    else
+      string << string[0]
+      string << string[1]
+      string << string[2]
+      string << "ay"
+      string[0] = ""
+      string[0] = ""
+      string[0] = ""
     end
     string
   end
