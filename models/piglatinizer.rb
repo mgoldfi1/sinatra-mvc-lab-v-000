@@ -16,7 +16,7 @@ class PigLatinizer
       string << "ay"
       string[0] = ""
       string[0] = ""
-    else
+    elsif !string[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !string[1].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !string[2].scan(/[bcdfghjklmnpqrstvwxyz]/).empty?
       string << string[0]
       string << string[1]
       string << string[2]
