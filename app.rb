@@ -8,7 +8,6 @@ class App < Sinatra::Base
 
   post '/' do
     @sentence = PigLatinizer.new(params["string"])
-    binding.pry
     erb :user_input
   end
 
