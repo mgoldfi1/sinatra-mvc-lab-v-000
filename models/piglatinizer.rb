@@ -4,7 +4,7 @@ class PigLatinizer
 
   def piglatinize(string)
 
-    if !string[0].scan(/[aeiou]/).empty?
+    if !string[0].scan(/[aeiouAEIOU]/).empty?
       string << "way"
     elsif !string[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !string[1].scan(/[aeiou]/).empty?
       string << string[0]
