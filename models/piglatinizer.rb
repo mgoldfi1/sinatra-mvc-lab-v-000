@@ -5,5 +5,4 @@ class PigLatinizer
   def initialize(words)
     @words = words
   end
-binding.pry
 end
