@@ -10,6 +10,10 @@ class PigLatinizer
       string << string[0]
       string[0] = ""
       string << "ay"
+    else
+      string << string.shift(2)
+      string[0] = ""
+      string[1] = ""
     end
     string
       binding.pry
