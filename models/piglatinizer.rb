@@ -16,7 +16,6 @@ class PigLatinizer
       string[1] = ""
     end
     string
-      binding.pry
   end
 
 end
