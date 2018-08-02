@@ -4,7 +4,7 @@ class PigLatinizer
 
   def piglatinize(string)
     binding.pry
-    if string.start_with?(/[aeiou]/)
+    if !string[0].scan(/[aeiou]/).empty?
       string << "way"
     end
   end
