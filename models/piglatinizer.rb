@@ -6,6 +6,12 @@ class PigLatinizer
     binding.pry
     if !string[0].scan(/[aeiou]/).empty?
       string << "way"
+      string
+    elsif !string[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !string[1].scan(/[aeiou]/).empty?
+      string << string[0]
+      string[0] = ""
+      string << "ay"
+      string
     end
   end
 
