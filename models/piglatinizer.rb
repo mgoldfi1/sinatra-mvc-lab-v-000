@@ -7,12 +7,12 @@ class PigLatinizer
     if !word[0].scan(/[aeiouAEIOU]/).empty?
       word << "way"
       word
-    elsif !word[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !word[1].scan(/[aeiou]/).empty?
+    elsif !word[0].scan(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/).empty? && !word[1].scan(/[aeiou]/).empty?
       word << word[0]
       word[0] = ""
       word << "ay"
       word
-    elsif !word[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !word[1].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !word[2].scan(/[bcdfghjklmnpqrstvwxyz]/).empty?
+    elsif !word[0].scan(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/).empty? && !word[1].scan(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/).empty? && !word[2].scan(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/).empty?
       word << word[0]
       word << word[1]
       word << word[2]
@@ -21,7 +21,7 @@ class PigLatinizer
       word[0] = ""
       word[0] = ""
       word
-    elsif !word[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !word[1].scan(/[bcdfghjklmnpqrstvwxyz]/).empty?
+    elsif !word[0].scan(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/).empty? && !word[1].scan(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/).empty?
       word << word[0]
       word << word[1]
       word << "ay"
