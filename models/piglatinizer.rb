@@ -24,9 +24,8 @@ class PigLatinizer
       word << "ay"
       word[0] = ""
       word[0] = ""
-
     end
-    string
+    sentence.join(" ")
 
   end
 
