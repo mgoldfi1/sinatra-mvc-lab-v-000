@@ -6,5 +6,6 @@ class PigLatinizer
     if string.start_with?(/[aeiou]/)
       string << "way"
     end
-      
+  end
+
 end
