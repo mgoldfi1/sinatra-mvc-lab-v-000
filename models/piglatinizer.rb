@@ -3,7 +3,7 @@ class PigLatinizer
   attr_reader :words
 
   def piglatinize(string)
-    binding.pry
+
     if !string[0].scan(/[aeiou]/).empty?
       string << "way"
       string
@@ -13,6 +13,7 @@ class PigLatinizer
       string << "ay"
       string
     end
+      binding.pry
   end
 
 end
