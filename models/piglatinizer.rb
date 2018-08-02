@@ -26,7 +26,7 @@ class PigLatinizer
       string[0] = ""
     end
     string
-  
+
   end
 
 end
