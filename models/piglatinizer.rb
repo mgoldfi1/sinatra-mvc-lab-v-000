@@ -3,7 +3,8 @@ class PigLatinizer
   attr_reader :words
 
   def piglatinize(string)
-
+    sentence = []
+  string.split(" ").map do |word|
     if !string[0].scan(/[aeiouAEIOU]/).empty?
       string << "way"
     elsif !string[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !string[1].scan(/[aeiou]/).empty?
