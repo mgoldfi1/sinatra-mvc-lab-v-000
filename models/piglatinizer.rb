@@ -24,7 +24,7 @@ class PigLatinizer
       string << "ay"
       string[0] = ""
       string[0] = ""
-    
+
     end
     string
 
