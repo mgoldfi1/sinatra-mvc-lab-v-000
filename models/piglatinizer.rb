@@ -10,12 +10,6 @@ class PigLatinizer
       string << string[0]
       string[0] = ""
       string << "ay"
-    elsif !string[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !string[1].scan(/[bcdfghjklmnpqrstvwxyz]/).empty?
-      string << string[0]
-      string << string[1]
-      string << "ay"
-      string[0] = ""
-      string[0] = ""
     elsif !string[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !string[1].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !string[2].scan(/[bcdfghjklmnpqrstvwxyz]/).empty?
       string << string[0]
       string << string[1]
@@ -24,7 +18,13 @@ class PigLatinizer
       string[0] = ""
       string[0] = ""
       string[0] = ""
-
+    elsif !string[0].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !string[1].scan(/[bcdfghjklmnpqrstvwxyz]/).empty?
+      string << string[0]
+      string << string[1]
+      string << "ay"
+      string[0] = ""
+      string[0] = ""
+    
     end
     string
 
